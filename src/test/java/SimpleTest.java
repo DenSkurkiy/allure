@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.Matchers.is;
@@ -23,6 +24,18 @@ public class SimpleTest {
     }
     @Test
     void NegativeWithHumcrestTest(){
+        assertThat(true, is(false));
+
+    }
+    @Test
+    @DisplayName("positive test")
+    void SuccessWithHumcrestEndStepsTest(){
+        assertThat(true, is(true));
+
+    }
+    @Test
+    @DisplayName("negative test")
+    void NegativeWithHumcrestEndStepsTest(){
         assertThat(true, is(false));
 
     }
