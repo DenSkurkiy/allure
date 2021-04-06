@@ -1,3 +1,7 @@
+io_slyusariev/MethodStepTest.java
+ io_slyusariev.MethodStepTest
+io_slyusariev/LambdaStepTest.java
+ io_slyusariev.LambdaStepTest
 io_slyusariev/Tests.java
  io_slyusariev.Tests
 io_slyusariev/Test_2.java

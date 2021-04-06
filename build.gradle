@@ -9,6 +9,12 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
 allure {
     autoconfigure = true
     version = '2.13.8'  // Latest Allure Version
@@ -21,10 +27,13 @@ allure {
 
 
 dependencies {
+    compile("com.codeborne:selenide:5.18.0")
+    compile("io.qameta.allure:allure-java-commons:2.13.8")
+    compile("io.qameta.allure:allure-selenide:2.13.8")
 
-    compile 'com.codeborne:selenide:5.18.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile("org.junit.jupiter:junit-jupiter-api:5.7.0")
+    compile("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+    compile("org.junit.jupiter:junit-jupiter-params:5.7.0")
 }
 
 test {
